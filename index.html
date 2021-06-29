@@ -10,7 +10,7 @@
     <!-- Colocando css  no html-->
     <style type="text/css">
         body{
-            background-color: blueviolet;
+            background-color: rgb(149, 145, 153);
         }
     </style>
 
@@ -91,7 +91,33 @@
             <option value="2">Vendas</option>
         </select>
 
+        <fieldset>
 
+            <legend>Interesses de Estudo</legend>
+            <!-- marca soo uma opção-->
+            <label for="campo31">Marketing</label>
+                <input type="radio" name="interesse1" value="1" id="campo31"/>
+                
+            <label for="campo32">Vendas</label>
+                <input type="radio" name="interesse1" value="2"id="campo31"/>
+
+            <!-- nesse radio o nome tem q ser o mesmo pra selecionar so 1-->
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Interesses de Estudo 2</legend>
+            <label for="campo32">Marketing</label>
+                <input type="checkbox" name="interesse3" value="1" id="campo32"/>
+            
+            <label for="campo32">Vendas</label>
+                <input type="checkbox" name="interesse3" value="2"id="campo32"/>
+
+                
+            
+        </fieldset>
+
+        <input type="submit" value="Enviar formulário">
     </form>
     
     
