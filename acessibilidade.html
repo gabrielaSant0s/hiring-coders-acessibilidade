@@ -31,7 +31,7 @@
 
         <main role="main">
 
-            <p> 
+            <p id="article-description"> 
                 O menino quer um burrinho
                 para passear.
                 Um burrinho manso,
@@ -81,6 +81,23 @@
 
         <img src="img1.jpg" alt="logo google" title="googles" aria-labelledby="logog"/>
         <p id="description-logog">Imagem com muuitos logos do google chrome sobrepostos</p>
+
+        <!--DOM MÉTODOS-->
+
+        <script type="text/javascript">
+        
+            document.getElementById("article-description").style.color ="red";
+        
+         </script>
+
+        <button id="botao1" onclick="atualizacao()">Atualização de texto</button>
+        <script type="text/javascript">
+            function atualizacao(){
+                var texto1 = document.getElementById("article-description");
+                texto1.innerText = "Burro!";
+            }
+
+        </script>
         
     </body>
     <footer role="contentinfo">
